@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: prexxy-bug-bot
+    runtime: node
+    repo: https://github.com/alphaluna21/PREXZY-BUG-V2
+    branch: main
+    buildCommand: npm install
+    startCommand: node bot.js  # Replace bot.js with your actual bot's start file
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.1
